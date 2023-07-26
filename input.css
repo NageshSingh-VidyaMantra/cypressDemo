@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .homeSection {
+        @apply w-full space-y-20 bg-red-100 flex flex-col justify-center items-center;
+    }
+
+    .homeSale{
+        @apply text-5xl bg-gradient-to-r from-red-500 to-pink-500  text-white w-full text-center py-10 mb-20 rounded-lg shadow-xl;
+    }
+
+    .shoppingCardDiv {
+        @apply flex flex-col h-[200px] w-[175px] bg-white rounded-2xl shadow-lg justify-evenly items-center hover:scale-105 hover:shadow-red-400  transition-all duration-700;
+    }
+
+    .shoppingCardP {
+        @apply bg-red-200 rounded-lg shadow-inner w-3/4 text-center h-1/2 flex justify-center items-center text-3xl;
+    }
+
+    .shoppingCardA {
+        @apply w-3/4 text-center bg-red-500 p-3 rounded-lg text-lg font-bold text-white;
+    }
+    .clearAll {
+        @apply bg-white w-full rounded-sm  hover:text-white p-2 hover:bg-transparent transition-all duration-500 text-red-500;
+    }
+}
